@@ -11,7 +11,8 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-video, .img-tesla {
+video,
+.img-tesla {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -85,19 +86,21 @@ button {
     top: 40px;
     width: 100%;
     max-width: 600px;
-    height: 100%;
+    height: auto;
+    max-height: 100vh;
     z-index: 3;
     left: -100%;
     transition: 1.5s;
+    overflow: auto;
 }
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    h1{ 
+    h1 {
         font-size: 5vw;
-}
+    }
 
-    .formulario{
+    .formulario {
         width: 50%;
     }
 }
